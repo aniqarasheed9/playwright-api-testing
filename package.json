@@ -1,0 +1,29 @@
+{
+  "name": "api-test-automation",
+  "version": "1.0.0",
+  "description": "Playwright API test automation suite for FakeStoreAPI",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:ui": "playwright test --ui",
+    "test:products": "playwright test tests/products.spec.ts",
+    "test:auth": "playwright test tests/auth.spec.ts",
+    "test:carts": "playwright test tests/carts.spec.ts",
+    "test:users": "playwright test tests/users.spec.ts",
+    "test:schema": "playwright test tests/schema-validation.spec.ts",
+    "test:negative": "playwright test tests/negative-cases.spec.ts",
+    "report": "playwright show-report reports/html-report"
+  },
+  "keywords": ["playwright", "api-testing", "automation", "testing", "fakestoreapi"],
+  "author": "Aniqa Rasheed",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.60.0",
+    "@types/node": "^25.9.3",
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^6.0.3"
+  }
+}
